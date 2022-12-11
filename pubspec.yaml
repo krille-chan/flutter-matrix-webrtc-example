@@ -9,12 +9,27 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
 
 dev_dependencies:
+  # flutter_launcher_icons: ^0.11.0
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
 
 flutter:
+  generate: true
   uses-material-design: true
+
+# Uncomment and run `flutter pub run flutter_launcher_icons` to generate
+# a new launcher icon from `assets/images/logo.png`.
+#
+#flutter_icons:
+#  android: "launcher_icon"
+#  ios: true
+#  remove_alpha_ios: true
+#  image_path: "assets/images/logo.png"
+#  web:
+#    generate: true

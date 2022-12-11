@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easy_template/pages/info/info_controller.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class InfoView extends StatelessWidget {
   final InfoController controller;
@@ -8,7 +9,9 @@ class InfoView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(L10n.of(context)!.helloWorld),
+      ),
       body: ListView(
         children: [
           ListTile(
