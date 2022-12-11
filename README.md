@@ -27,6 +27,13 @@ What we won't cover:
 - Persistent storage (You decide if you like [Hive](https://pub.dev/packages/hive), [SQFlite](https://pub.dev/packages/sqflite) or [Isar](https://pub.dev/packages/isar))
 - Routing (While the template comes with basic Navigator 1 routing)
 
+And what will be the outcome?
+
+- 🌱 Longer lasting code as you only rely on Flutter itself
+- 💆 Less migrations to other state management frameworks
+- 🌤️ Lightweight code which is easy to understand for all Flutter developers
+- 🎆 You will finally be free from the *"Latest fancy framework, why haven't you already migrated yet?"*
+
 ### 🏛️ Architecture
 
 ```
@@ -101,7 +108,7 @@ class InfoController extends State<InfoPage> {
 }
 ```
 
-#### InfoView is a StatelessWidget with gets the controller as it's only parameter:
+InfoView is a StatelessWidget with gets the controller as it's only parameter:
 
 ```dart
 class InfoView extends StatelessWidget {
@@ -224,3 +231,9 @@ class HomeView extends StatelessWidget {
   }
 }
 ```
+
+### 📝 Some Notes
+
+The AppState and the AppStorage does not know the underlying UI. Therefore the actions can be tested easily in unit tests. There is no native way for persistent data storing. Instead of hardcoding one solution like Hive you might consider writing an API for your AppStorage with just one implementation with possible migrations kept in mind.
+
+Routing can also be hard. For most apps Navigator 1 might be good enough. Navigator 2 can be too complex but there are a lot of different packages out there. I have switched between them a lot but this is less pain as you don't need to think about migration here.
