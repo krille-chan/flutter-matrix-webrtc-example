@@ -4,27 +4,20 @@ import 'package:flutter_easy_template/pages/info/info_controller.dart';
 
 abstract class AppRoutes {
   /// Define your routes here. Use {} for
-  static const Map<String, List<Page>> _routes = {
-    '/': [MaterialPage(child: HomePage())],
-    '/info': [
-      MaterialPage(child: HomePage()),
-      MaterialPage(child: InfoPage()),
-    ],
+  static const Map<String, Widget> _routes = {
+    '/': HomePage(),
+    '/info': InfoPage(),
   };
 
   /// Define your routes here.
   static Route<dynamic>? onGenerateRoute(RouteSettings routeSettings) {
     final route = routeSettings.name ?? '';
-    final pages = _routes[route];
-    if (pages == null) {
+    final page = _routes[route];
+    if (page == null) {
       return MaterialPageRoute(
         builder: (_) => const Text('Route not found...'),
       );
     }
-    return MaterialPageRoute(
-      builder: (_) => Navigator(
-        pages: pages,
-      ),
-    );
+    return MaterialPageRoute(builder: (_) => page);
   }
 }

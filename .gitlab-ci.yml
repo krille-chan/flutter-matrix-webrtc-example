@@ -1,0 +1,61 @@
+image:
+  name: cirrusci/flutter
+
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  script:
+    - flutter pub get
+    - flutter format lib/ test/ --set-exit-if-changed
+    - flutter analyze
+    - flutter test
+
+build_apk_debug:
+  stage: build
+  script:
+    - flutter pub get
+    - flutter build apk
+  artifacts:
+    when: on_success
+    paths:
+      - build/app/outputs/apk/debug/app-release.apk
+  except:
+    - main
+    - tags
+
+build_web:
+  stage: build
+  script:
+    - flutter pub get
+    - flutter build web --release --verbose --web-renderer html
+  artifacts:
+    paths:
+      - build/web/
+
+build_apk:
+  stage: build
+  script:
+    - flutter pub get
+    - flutter build apk --release
+  artifacts:
+    when: on_success
+    paths:
+      - build/app/outputs/apk/release/app-release.apk
+  only:
+    - main
+    - tags
+
+pages:
+  stage: deploy
+  image: ruby:latest
+  script:
+    - mv build/web/ public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

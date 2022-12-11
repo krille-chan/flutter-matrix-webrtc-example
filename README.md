@@ -1,4 +1,4 @@
-# flutter_easy_template
+# Flutter Easy Template
 
 A new Flutter project.
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easy_template/config/app_constants.dart';
-import 'package:flutter_easy_template/logic/counter_actions.dart';
+import 'package:flutter_easy_template/model/actions/counter_actions.dart';
 import 'package:flutter_easy_template/pages/home/home_controller.dart';
-import 'package:flutter_easy_template/logic/app_state.dart';
+import 'package:flutter_easy_template/model/app_state.dart';
 
 class HomeView extends StatelessWidget {
   final HomeController controller;
