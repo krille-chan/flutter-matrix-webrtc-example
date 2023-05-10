@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:matrix/matrix.dart';
+
 import 'package:webrtc_flutter_matrix/config/app_constants.dart';
 import 'package:webrtc_flutter_matrix/pages/home/home_controller.dart';
-
 import '../../model/app_state.dart';
 
 class HomeView extends StatelessWidget {

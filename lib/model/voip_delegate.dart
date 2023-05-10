@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
-import 'package:matrix/matrix.dart';
+
 import 'package:flutter_webrtc/flutter_webrtc.dart' as webrtc_impl;
+import 'package:matrix/matrix.dart';
 import 'package:webrtc_interface/webrtc_interface.dart' hide Navigator;
 
 class VoipDelegate implements WebRTCDelegate {

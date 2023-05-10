@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:matrix/matrix.dart';
+
 import 'package:webrtc_flutter_matrix/model/voip_delegate.dart';
 
 /// Represents the ViewModel of your application and is accessible everywhere

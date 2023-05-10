@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:matrix/matrix.dart';
+
 import '../../model/app_state.dart';
 import 'chat_view.dart';
 

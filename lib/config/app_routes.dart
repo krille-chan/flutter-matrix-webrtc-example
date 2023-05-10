@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:matrix/matrix.dart';
+
 import 'package:webrtc_flutter_matrix/pages/chat/chat_controller.dart';
 import 'package:webrtc_flutter_matrix/pages/home/home_controller.dart';
 import 'package:webrtc_flutter_matrix/pages/info/info_controller.dart';
-import 'package:webrtc_flutter_matrix/pages/login/info_controller.dart';
+import 'package:webrtc_flutter_matrix/pages/login/login_controller.dart';
 
 class AppRoutes {
   final Client client;
