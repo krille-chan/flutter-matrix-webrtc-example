@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_easy_template/pages/home/home_view.dart';
+import 'package:webrtc_flutter_matrix/pages/home/home_view.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

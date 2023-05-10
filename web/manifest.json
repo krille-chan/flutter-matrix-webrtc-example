@@ -1,6 +1,6 @@
 {
-    "name": "flutter_easy_template",
-    "short_name": "flutter_easy_template",
+    "name": "webrtc_flutter_matrix",
+    "short_name": "webrtc_flutter_matrix",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

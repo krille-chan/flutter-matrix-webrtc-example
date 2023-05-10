@@ -1,4 +1,4 @@
-name: flutter_easy_template
+name: webrtc_flutter_matrix
 description: A new Flutter project.
 publish_to: 'none'
 version: 1.0.0+1
@@ -11,7 +11,14 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_olm: ^1.2.0
+  flutter_openssl_crypto: ^0.1.0
+  flutter_webrtc: ^0.9.29+hotfix.1
+  hive_flutter: ^1.1.0
   intl: ^0.17.0
+  matrix: ^0.20.1
+  path_provider: ^2.0.15
+  webrtc_interface: ^1.0.13
 
 dev_dependencies:
   # flutter_launcher_icons: ^0.11.0

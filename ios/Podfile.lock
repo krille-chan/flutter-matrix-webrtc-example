@@ -1,0 +1,52 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_olm (3.2.9):
+    - Flutter
+  - flutter_openssl_crypto (0.0.1):
+    - Flutter
+    - OpenSSL-Universal
+  - flutter_webrtc (0.9.25):
+    - Flutter
+    - WebRTC-SDK (= 104.5112.16)
+  - OpenSSL-Universal (1.1.2000)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - WebRTC-SDK (104.5112.16)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_olm (from `.symlinks/plugins/flutter_olm/ios`)
+  - flutter_openssl_crypto (from `.symlinks/plugins/flutter_openssl_crypto/ios`)
+  - flutter_webrtc (from `.symlinks/plugins/flutter_webrtc/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/ios`)
+
+SPEC REPOS:
+  trunk:
+    - OpenSSL-Universal
+    - WebRTC-SDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_olm:
+    :path: ".symlinks/plugins/flutter_olm/ios"
+  flutter_openssl_crypto:
+    :path: ".symlinks/plugins/flutter_openssl_crypto/ios"
+  flutter_webrtc:
+    :path: ".symlinks/plugins/flutter_webrtc/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_olm: b4509daf9bed7b0d779c921965de53982b1cfe64
+  flutter_openssl_crypto: 636ad25f56fbe0f45b9e13b8589540b341a486a1
+  flutter_webrtc: ae7ab6f74d3c4f186594a74863f11433e7ab148a
+  OpenSSL-Universal: 708e3d1e616a2c40f09a880aafc4b14d2f2a61ec
+  path_provider_foundation: eaf5b3e458fc0e5fbb9940fb09980e853fe058b8
+  WebRTC-SDK: 566e58d2916cb79d770350169a449ea523f5db7c
+
+PODFILE CHECKSUM: 61e6ec3960cbddc90e726d71d9b7042c652eaccf
+
+COCOAPODS: 1.11.3

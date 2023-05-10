@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_easy_template/pages/info/info_controller.dart';
+import 'package:webrtc_flutter_matrix/pages/info/info_controller.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class InfoView extends StatelessWidget {
@@ -18,6 +18,11 @@ class InfoView extends StatelessWidget {
             title: const Text('Info'),
             leading: const Icon(Icons.info_outlined),
             onTap: controller.onInfoTab,
+          ),
+          ListTile(
+            title: const Text('Logout'),
+            leading: const Icon(Icons.logout_outlined),
+            onTap: controller.onLogoutTab,
           ),
         ],
       ),

@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "flutter_easy_template" "\0"
+            VALUE "FileDescription", "webrtc_flutter_matrix" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "flutter_easy_template" "\0"
+            VALUE "InternalName", "webrtc_flutter_matrix" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "flutter_easy_template.exe" "\0"
-            VALUE "ProductName", "flutter_easy_template" "\0"
+            VALUE "OriginalFilename", "webrtc_flutter_matrix.exe" "\0"
+            VALUE "ProductName", "webrtc_flutter_matrix" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
