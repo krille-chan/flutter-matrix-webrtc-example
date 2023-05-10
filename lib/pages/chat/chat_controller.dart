@@ -30,6 +30,17 @@ class ChatController extends State<ChatPage> {
     });
   }
 
+  void stopCall() async {
+    final callSession = this.callSession!;
+    setState(() {
+      if (callSession.isRinging) {
+        callSession.reject();
+      } else {
+        callSession.hangup();
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) => ChatView(this);
 }

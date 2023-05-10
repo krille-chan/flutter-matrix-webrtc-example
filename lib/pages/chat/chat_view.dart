@@ -70,11 +70,17 @@ class ChatView extends StatelessWidget {
               padding: const EdgeInsets.all(12.0),
               child: SizedBox(
                 width: double.infinity,
-                child: ElevatedButton.icon(
-                  onPressed: controller.startCall,
-                  label: const Text('Start videocall'),
-                  icon: const Icon(Icons.video_call_outlined),
-                ),
+                child: callSession == null
+                    ? ElevatedButton.icon(
+                        onPressed: controller.startCall,
+                        label: const Text('Start videocall'),
+                        icon: const Icon(Icons.video_call_outlined),
+                      )
+                    : ElevatedButton.icon(
+                        onPressed: controller.stopCall,
+                        label: const Text('Hangup'),
+                        icon: const Icon(Icons.stop_outlined),
+                      ),
               ),
             )
           ],
